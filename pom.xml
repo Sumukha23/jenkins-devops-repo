@@ -180,14 +180,14 @@
 						<!--<exclude>**/*ApplicationTests.java</exclude> -->
 						<exclude>**/RunCucumberIntegrationTestCase.java</exclude>
 					</excludes>
-					<!-- <properties>
+					<!-- <properties> -->
 						<!-- add SonarQube's JaCoCo listener to enable -->
 						<!-- gathering of code coverage metrics per test -->
-						<property>
+						<!-- <property>
 							<name>listener</name>
 							<value>org.sonar.java.jacoco.JUnitListener</value>
-						</property>
-					</properties> -->
+						</property> -->
+					<!-- </properties> -->
 				</configuration>
 			</plugin>
 			<plugin>
