@@ -167,7 +167,10 @@
 					<!-- <argLine>-XX:-UseSplitVerifier ${jacoco.utAgentConfig}</argLine> -->
 					<!-- JDK 8 - bytecode verifier cannot be relaxed or disabled -->
 					<!-- to prevent runtime errors, OpenJPA tests are ignored -->
-					<argLine>${jacoco.utAgentConfig} -Djacoco-agent.excludes=java.*,javax.*</argLine>
+					<jacoco.utAgentConfig>
+                     -javaagent:${jacoco.path}=destfile=${jacoco.utReport},excludes=java.*,javax.*
+                    </jacoco.utAgentConfig>
+
 					<excludes>
 						<!--<exclude>**/*ApplicationTests.java</exclude> -->
 						<exclude>**/RunCucumberIntegrationTestCase.java</exclude>
