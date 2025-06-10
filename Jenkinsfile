@@ -1,9 +1,9 @@
 //Scripted
-node {
-	echo "Build"
-	echo "Test"
-	echo "Integration Test"
-	}
+// node {
+// 	echo "Build"
+// 	echo "Test"
+// 	echo "Integration Test"
+// 	}
 //Declarative
 pipeline {
 	agent any
@@ -16,8 +16,8 @@ pipeline {
 	stages{
 		stage('Checkout'){
 			steps{
-				sh "mvn --version"
-				sh "docker version"	
+				sh 'mvn --version'
+				sh 'docker version'	
 				echo "Build"
 				echo "Path - $PATH"
 				echo "BUILD_Number - $env.BUILD_NUMBER"
