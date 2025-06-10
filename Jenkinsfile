@@ -6,7 +6,7 @@ node {
 	}
 //Declarative
 pipeline {
-	agent  { docker {image 'maven:3.9.10'} }
+	agent  { docker {image 'maven:3.9.9'} }
 	stages{
 		stage('Build'){
 			steps{
